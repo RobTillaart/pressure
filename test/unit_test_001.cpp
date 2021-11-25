@@ -78,7 +78,7 @@ unittest(test_constants_setter)
   assertEqualFloat(68.9475729318  PSI2MILLIBAR,    1e-4);
   assertEqualFloat(0.001,         DYNES2MILLIBAR,  1e-7);
   assertEqualFloat(33.85355,      INHG2MILLIBAR,   1e-4);
-  assertEqualFloat(2.43427,       INH202MILLIBAR,  1e-4);
+  assertEqualFloat(2.49088908333, INH202MILLIBAR,  1e-4);
   assertEqualFloat(0.01,          PASCAL2MILLIBAR, 1e-4);
   assertEqualFloat(1.33322368,    TORR2MILLIBAR,   1e-5);
   assertEqualFloat(13.3322368,    CMHG2MILLIBAR,   1e-5);
@@ -98,10 +98,10 @@ unittest(test_constants_getter)
   assertEqualFloat(0.0145037738,  MILLIBAR2PSI,    1e-4);
   assertEqualFloat(1000,          MILLIBAR2DYNES,  1);
   assertEqualFloat(2.9539e-2,     MILLIBAR2INHG,   1e-5);
-  assertEqualFloat(0.4018,        MILLIBAR2INH2O,  1e-4);
+  assertEqualFloat(0.40146307866, MILLIBAR2INH2O,  1e-4);
   assertEqualFloat(100,           MILLIBAR2PASCAL, 1e-3);
-  assertEqualFloat(0.75028,       MILLIBAR2TORR,   1e-5);
-  assertEqualFloat(0.075028,      MILLIBAR2CMHG,   1e-6);
+  assertEqualFloat(0.750061683,   MILLIBAR2TORR,   1e-5);
+  assertEqualFloat(0.0750061683,  MILLIBAR2CMHG,   1e-6);
   assertEqualFloat(1.0197162129,  MILLIBAR2CMH2O,  1e-5);
   assertEqualFloat(100,           MILLIBAR2MSW,    1);
 }
