@@ -52,18 +52,18 @@ unittest(test_constructor)
 
   pressure P;
 
-  assertEqual(0.0, P.getMilliBar(), 1e-4);
-  assertEqual(0.0, P.getBar(), 1e-4);
-  assertEqual(0.0, P.getPSI(), 1e-4);
-  assertEqual(0.0, P.getATM(), 1e-4);
-  assertEqual(0.0, P.getDynes(), 1e-4);
-  assertEqual(0.0, P.getInchHg(), 1e-4);
-  assertEqual(0.0, P.getInchH2O(), 1e-4);
-  assertEqual(0.0, P.getPascal(), 1e-4);
-  assertEqual(0.0, P.getTORR(), 1e-4);
-  assertEqual(0.0, P.getCmHg(), 1e-4);
-  assertEqual(0.0, P.getCmH2O(), 1e-4);
-  assertEqual(0.0, P.getMSW(), 1e-4);
+  assertEqualFloat(0.0, P.getMilliBar(), 1e-4);
+  assertEqualFloat(0.0, P.getBar(), 1e-4);
+  assertEqualFloat(0.0, P.getPSI(), 1e-4);
+  assertEqualFloat(0.0, P.getATM(), 1e-4);
+  assertEqualFloat(0.0, P.getDynes(), 1e-4);
+  assertEqualFloat(0.0, P.getInchHg(), 1e-4);
+  assertEqualFloat(0.0, P.getInchH2O(), 1e-4);
+  assertEqualFloat(0.0, P.getPascal(), 1e-4);
+  assertEqualFloat(0.0, P.getTORR(), 1e-4);
+  assertEqualFloat(0.0, P.getCmHg(), 1e-4);
+  assertEqualFloat(0.0, P.getCmH2O(), 1e-4);
+  assertEqualFloat(0.0, P.getMSW(), 1e-4);
 }
 
 
