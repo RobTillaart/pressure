@@ -75,7 +75,7 @@ unittest(test_constants_setter)
 
   assertEqualFloat(1000,          BAR2MILLIBAR,    1);
   assertEqualFloat(1013.25,       ATM2MILLIBAR,    1e-4);
-  assertEqualFloat(68.9475729318  PSI2MILLIBAR,    1e-4);
+  assertEqualFloat(68.9475729318, PSI2MILLIBAR,    1e-4);
   assertEqualFloat(0.001,         DYNES2MILLIBAR,  1e-7);
   assertEqualFloat(33.85355,      INHG2MILLIBAR,   1e-4);
   assertEqualFloat(2.49088908333, INH202MILLIBAR,  1e-4);
@@ -114,17 +114,17 @@ unittest(test_constants_3)
 
   fprintf(stderr, "Test conversion constants\n");
 
-  assertEqualFloat(1, BAR2MILLIBAR    * MILLIBAR2BAR,    1e-5);
-  assertEqualFloat(1, ATM2MILLIBAR    * MILLIBAR2ATM,    1e-5);
-  assertEqualFloat(1, PSI2MILLIBAR    * MILLIBAR2PSI,    1e-5);
-  assertEqualFloat(1, DYNES2MILLIBAR  * MILLIBAR2DYNES,  1e-5);
-  assertEqualFloat(1, INHG2MILLIBAR   * MILLIBAR2INHG,   1e-5);
-  assertEqualFloat(1, INH202MILLIBAR  * MILLIBAR2INH2O,  1e-5);
-  assertEqualFloat(1, PASCAL2MILLIBAR * MILLIBAR2PASCAL, 1e-5);
-  assertEqualFloat(1, TORR2MILLIBAR   * MILLIBAR2TORR,   1e-5);
-  assertEqualFloat(1, CMHG2MILLIBAR   * MILLIBAR2CMHG,   1e-5);
-  assertEqualFloat(1, CMH2O2MILLIBAR  * MILLIBAR2CMH2O,  1e-5);
-  assertEqualFloat(1, MSW2MILLIBAR    * MILLIBAR2MSW,    1e-5);
+  assertEqualFloat(1.0, BAR2MILLIBAR    * MILLIBAR2BAR,    1e-5);
+  assertEqualFloat(1.0, ATM2MILLIBAR    * MILLIBAR2ATM,    1e-5);
+  assertEqualFloat(1.0, PSI2MILLIBAR    * MILLIBAR2PSI,    1e-5);
+  assertEqualFloat(1.0, DYNES2MILLIBAR  * MILLIBAR2DYNES,  1e-5);
+  assertEqualFloat(1.0, INHG2MILLIBAR   * MILLIBAR2INHG,   1e-5);
+  assertEqualFloat(1.0, INH202MILLIBAR  * MILLIBAR2INH2O,  1e-5);
+  assertEqualFloat(1.0, PASCAL2MILLIBAR * MILLIBAR2PASCAL, 1e-5);
+  assertEqualFloat(1.0, TORR2MILLIBAR   * MILLIBAR2TORR,   1e-5);
+  assertEqualFloat(1.0, CMHG2MILLIBAR   * MILLIBAR2CMHG,   1e-5);
+  assertEqualFloat(1.0, CMH2O2MILLIBAR  * MILLIBAR2CMH2O,  1e-5);
+  assertEqualFloat(1.0, MSW2MILLIBAR    * MILLIBAR2MSW,    1e-5);
 }
 
 
