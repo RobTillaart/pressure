@@ -94,7 +94,7 @@ unittest(test_constants_setter)
   fprintf(stderr, "Test conversion constants\n");
 
   assertEqualFloat(1000,          BAR2MILLIBAR,    1);
-  assertEqualFloat(1012.966,      ATM2MILLIBAR,    1e-4);
+  assertEqualFloat(1013.25,       ATM2MILLIBAR,    1e-4);
   assertEqualFloat(68.9475729,    PSI2MILLIBAR,    1e-4);
   assertEqualFloat(0.001,         DYNES2MILLIBAR,  1e-7);
   assertEqualFloat(33.85355,      INHG2MILLIBAR,   1e-4);
