@@ -82,7 +82,7 @@ unittest(test_constants_getter)
   assertEqualFloat(100,           MILLIBAR2PASCAL, 1e-3);
   assertEqualFloat(0.75028,       MILLIBAR2TORR,   1e-5);
   assertEqualFloat(0.075028,      MILLIBAR2CMHG,   1e-6);
-  assertEqualFloat(1.02056,       MILLIBAR2CMH2O,  1e-5);
+  assertEqualFloat(1.0197162129,  MILLIBAR2CMH2O,  1e-5);
   assertEqualFloat(100,           MILLIBAR2MSW,    1);
 }
 
