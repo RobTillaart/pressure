@@ -14,7 +14,8 @@ Arduino library for pressure conversion.
 ## Description
 
 Simple library to convert between several pressure formats.
-It consists of a number of setters and getters and internally it uses millibar. In fact it just hides all conversion constants.
+It consists of a number of setters and getters and internally it uses millibar. 
+In fact it just hides all conversion constants.
 
 Pressure is implemented as a float so this limits the precision of the value.
 
