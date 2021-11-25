@@ -14,7 +14,8 @@ Arduino library for pressure conversion.
 ## Description
 
 Simple library to convert between several pressure formats.
-It consists of a number of setters and getters and internally it uses millibar. In fact it just hides all conversion constants.
+It consists of a number of setters and getters and internally it uses millibar. 
+In fact it just hides all conversion constants.
 
 Pressure is implemented as a float so this limits the precision of the value.
 
@@ -40,7 +41,7 @@ Note: constants need to be verified.
 - **void setDynes(float value)** sets pressure in Dynes.
 - **void setInchHg(float value)** sets pressure in inches mercury.
 - **void setInchH2O(float value)** sets pressure in inches water.
-- **void setPascal(float value)** sets pressure in Pascal. Note this is the SI unit.
+- **void setPascal(float value)** sets pressure in Pascal. Note this is the **SI** unit.
 - **void setTORR(float value)** sets pressure in TORR.
 - **void setCmHg(float value)** sets pressure in centimetre mercury.
 - **void setCmH2O(float value)** sets pressure in centimetre water.
@@ -56,7 +57,7 @@ Note: constants need to be verified.
 - **float getDynes()** returns pressure in Dynes.
 - **float getInchHg()** returns pressure in inches mercury.
 - **float getInchH2O()** returns pressure in inches water.
-- **float getPascal()** returns pressure in Pascal. Note this is the SI unit.
+- **float getPascal()** returns pressure in Pascal. Note this is the **SI** unit.
 - **float getTORR()** returns pressure in TORR.
 - **float getCmHg()** returns pressure in centimetre mercury.
 - **float getCmH2O()** returns pressure in centimetre water.
@@ -78,9 +79,7 @@ Serial.println(P.getTORR());     // 1000 Dynes in Torr
 ```
 
 
-
 ## Future
-
 
 - update documentation
 - find a good reference for conversion formula constants.
