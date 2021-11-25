@@ -3,7 +3,7 @@
 //  AUTHOR: Rob Tillaart
 // VERSION: 0.1.0
 // PURPOSE: demo
-//    DATE: 2020-06-18--
+//    DATE: 2021-11-25
 //     URL: https://github.com/RobTillaart/pressure
 
 
@@ -20,7 +20,7 @@ void setup()
   Serial.println(PRESSURE_LIB_VERSION);
 
   // convert one pressure to 12 output units.
-  P.setMillibar(1019.1);
+  P.setMilliBar(1019.1);
 
   Serial.print("mBar: \t");    Serial.println(P.getMilliBar(),3);
   Serial.print("Bar: \t");     Serial.println(P.getBar(),3);
@@ -42,4 +42,3 @@ void loop()
 
 
 // =- END OF FILE --
-
