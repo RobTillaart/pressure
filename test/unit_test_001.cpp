@@ -127,7 +127,7 @@ unittest(test_constants_3)
 }
 
 
-unittest(test_constructor)
+unittest(test_get_set)
 {
   fprintf(stderr, "PRESSURE_LIB_VERSION: %s\n", (char *) PRESSURE_LIB_VERSION);
 
