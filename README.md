@@ -107,7 +107,6 @@ Serial.println(P.getTORR());     // 1000 Dynes in Torr
 Version 0.1.0 has incorrect setters. fixed in version 0.2.0.
 
 
-
 ## Future
 
 - update documentation
