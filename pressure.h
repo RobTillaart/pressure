@@ -2,10 +2,13 @@
 //
 //    FILE: pressure.h
 //  AUTHOR: Rob Tillaart
-// VERSION: 0.1.0
+// VERSION: 0.2.0
 // PURPOSE: Arduino library for pressure conversion
 //     URL: https://github.com/RobTillaart/pressure
 //
+
+
+#define PRESSURE_LIB_VERSION        (F("0.2.0"))
 
 
 //  CONSTANTS NEED TO BE VERIFIED
@@ -38,7 +41,6 @@
 #define MILLIBAR2MSW       100
 
 
-#define PRESSURE_LIB_VERSION        (F("0.1.0"))
 
 
 class pressure

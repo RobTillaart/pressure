@@ -107,7 +107,6 @@ unittest(test_constants_getter)
 }
 
 
-
 unittest(test_constants_3)
 {
   fprintf(stderr, "PRESSURE_LIB_VERSION: %s\n", (char *) PRESSURE_LIB_VERSION);
@@ -125,6 +124,27 @@ unittest(test_constants_3)
   assertEqualFloat(1.0, CMHG2MILLIBAR   * MILLIBAR2CMHG,   1e-5);
   assertEqualFloat(1.0, CMH2O2MILLIBAR  * MILLIBAR2CMH2O,  1e-5);
   assertEqualFloat(1.0, MSW2MILLIBAR    * MILLIBAR2MSW,    1e-5);
+}
+
+
+unittest(test_constructor)
+{
+  fprintf(stderr, "PRESSURE_LIB_VERSION: %s\n", (char *) PRESSURE_LIB_VERSION);
+
+  pressure P;
+
+  assertEqualFloat(2.0, P.getMilliBar(P.setMilliBar(2)), 1e-4);
+  assertEqualFloat(2.0, P.getBar(P.setBar(2)), 1e-4);
+  assertEqualFloat(2.0, P.getPSI(P.setPSI(2)), 1e-4);
+  assertEqualFloat(2.0, P.getATM(P.setATM(2)), 1e-4);
+  assertEqualFloat(2.0, P.getDynes(P.setDynes(2)), 1e-4);
+  assertEqualFloat(2.0, P.getInchHg(P.setInchHg(2)), 1e-4);
+  assertEqualFloat(2.0, P.getInchH2O(P.setInchH2O(2)), 1e-4);
+  assertEqualFloat(2.0, P.getPascal(P.setPascal(2)), 1e-4);
+  assertEqualFloat(2.0, P.getTORR(P.setTORR(2)), 1e-4);
+  assertEqualFloat(2.0, P.getCmHg(P.setCmHg(2)), 1e-4);
+  assertEqualFloat(2.0, P.getCmH2O(P.setCMH2O(2)), 1e-4);
+  assertEqualFloat(2.0, P.getMSW(P.setMSW(2)), 1e-4);
 }
 
 
