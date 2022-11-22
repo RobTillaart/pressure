@@ -145,9 +145,11 @@ x = P.getPressure()
 - do we need a **changeTC(float T1, float T2)** only change temperature, T in Celsius
 - should functions return bool true on success ?
 
+```cpp
 Kelvin = Celsius + 273.15;
 Kelvin = (Fahrenheit - 32) \* 5 / 9 + 273.15;
 Kelvin = Fahrenheit \* 5 / 9 + 290.93;  // one operator less.
+```
 
 
 ## Future
