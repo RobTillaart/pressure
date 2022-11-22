@@ -116,7 +116,7 @@ Version 0.1.0 has incorrect setters. fixed in version 0.2.0.
 
 #### Experimental 0.2.1
 
-Apply the ideal gas law : **PxV / nxT = Constant**
+Apply the ideal gas law : **P x V / n x T = Constant**
 
 - **void change(float T1, float T2, float V1, float V2, float N1, float N2)**
   - T (temperature) in Kelvin,
@@ -144,7 +144,26 @@ Kelvin = Fahrenheit \* 5 / 9 + 290.93;  // one operator less.
 
 ## Future
 
+#### must
 - update documentation
 - find a good reference for conversion formula constants.
-- test with gas law.
 
+
+#### should
+- test with gas law.
+- calculate getter constants from setter constants.    1.0 / XXX
+- rename parameters so they make more sense?
+```
+  void  setMilliBar(float milliBar )  { _pressure = milliBar; };
+  void  setBar(float Bar)             { _pressure = Bar * BAR2MILLIBAR; };
+  void  setPSI(float PSI)             { _pressure = PSI * PSI2MILLIBAR; };
+```
+- change should return int indicating 
+  -  1: a change is made.
+  -  0: no change is made
+  - -1: parameter negative
+
+
+#### could
+- defaults for functions?  0 like constructor?
+- move code to .cpp file ?

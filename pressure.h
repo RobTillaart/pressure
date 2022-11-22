@@ -2,18 +2,13 @@
 //
 //    FILE: pressure.h
 //  AUTHOR: Rob Tillaart
-// VERSION: 0.2.1
+// VERSION: 0.2.2
 // PURPOSE: Arduino library for pressure conversion
 //     URL: https://github.com/RobTillaart/pressure
-//
-// HISTORY
-//  0.1.0  2021-11-25   Initial version
-//  0.2.0  2021-11-25   Fix formulas
-//  0.2.1  2021-12-23   update library.json, license
-//                      add experimental gas law.
 
 
-#define PRESSURE_LIB_VERSION        (F("0.2.1"))
+
+#define PRESSURE_LIB_VERSION        (F("0.2.2"))
 
 
 //  CONSTANTS NEED TO BE VERIFIED
@@ -81,8 +76,8 @@ public:
   float getMSW()       { return _pressure * MILLIBAR2MSW; }
 
 
-  // EXPERIMENTAL
-  // temperature in Kelvin!
+  //  EXPERIMENTAL
+  //  temperature in KELVIN !
   void change(float T1, float T2, float V1, float V2, float N1, float N2)
   {
     changeT(T1, T2);
@@ -90,7 +85,7 @@ public:
     changeN(N1, N2);
   }
 
-  // temperature in Kelvin!
+  //  temperature in KELVIN!
   void changeT(float T1, float T2)
   {
     if ((T1 != T2) && (T1 > 0) && (T2 > 0)) _pressure *= (T2 / T1);
@@ -110,7 +105,7 @@ public:
 
 
 private:
-  float    _pressure;
+  float    _pressure;    //  millibar.
 };
 
 
