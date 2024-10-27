@@ -1,7 +1,7 @@
 {
   "name": "pressure",
   "keywords": "HG, H20, ATM, Bar, mBar",
-  "description": "Arduino library for pressure conversion.",
+  "description": "Arduino library for pressure conversion. Includes math for ideal gas law, temperature, volume and molarity.",
   "authors":
   [
     {
