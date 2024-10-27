@@ -17,10 +17,12 @@ Arduino library for pressure conversion.
 ## Description
 
 Arduino library to convert between several pressure units (formats).
-The class consists of a number of setters and getters and internally it uses millibar. 
-In fact the class just hides all conversion constants to and frm millibar.
+The class consists of a number of setters and getters. 
+Internally the class uses millibar, although Pascal is the **SI** unit. 
+In fact the class just hides all conversion constants to and from millibar.
 
-Pressure is implemented as a float so this limits the precision of the value.
+Pressure is implemented as a float so this limits in theory the precision of the value.
+However there are few sensors that can provide more than 7 digits of accuracy.
 
 If other constants / conversions are needed please open an issue on GitHub.
 
@@ -43,8 +45,7 @@ Note: constants need to be verified.
 
 ### Constructor
 
-- **pressure(float value = 0.0)** Constructor, 
-with optional initial value in mBar.
+- **pressure(float value = 0.0)** Constructor, with optional initial value in mBar.
 
 
 ### Setters
@@ -194,6 +195,10 @@ Serial.println(P.getTORR());     // 1000 Dynes in Torr
 - **float setMillibar(float value)** return pressure in millibar all setters
   - ```return _pressure = value * factor;```
 
+Possible additional interface
+- **changeTemperatureKelvin(float factor)**  Heat it with 10% => factor = 1.1
+
+
 #### Wont (unless requested)
 
 - move code to .cpp file
@@ -206,7 +211,7 @@ Serial.println(P.getTORR());     // 1000 Dynes in Torr
 - defaults for functions?
   - none  <<<<<<<<<<<<<<<<<<<<<<<<<<<
   - 0 like constructor?
-  - 1 to get conversion constant?
+  - 1 to get conversion constant?  user can do this easily.
 
 
 ## Support
