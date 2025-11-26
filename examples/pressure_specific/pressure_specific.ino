@@ -41,7 +41,7 @@ void setup()
   start = micros();
   for (int i = 0; i < 1000; i++)
   {
-    x = PSI2MSW(value);
+    x = psi2msw(value);
   }
   stop = micros();
   Serial.print("TIME:\t");
@@ -72,12 +72,10 @@ void loop()
 //  dedicated conversion
 #define PSI2MSW (PSI2MILLIBAR * MILLIBAR2MSW)
 
-inline float PSI2MSW(float value)
+inline float psi2msw(float value)
 {
-  
   return value * PSI2MSW;
 }
 
 
 //  -- END OF FILE --
-
