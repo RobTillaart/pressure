@@ -68,9 +68,13 @@ void loop()
 {
 }
 
+//
+//  dedicated conversion
+#define PSI2MSW (PSI2MILLIBAR * MILLIBAR2MSW)
+
 inline float PSI2MSW(float value)
 {
-  #define PSI2MSW = (PSI2MILLIBAR * MILLIBAR2MSW);
+  
   return value * PSI2MSW;
 }
 
